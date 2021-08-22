@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Book 1",
+      "author": "The Author",
+      "price": 12.25,
+      "currency": "USD"
+    },
+    {
+      "id": 2,
+      "name": "Khilaafat-o-Malookiyat",
+      "author": "The Author",
+      "price": 15,
+      "currency": "USD"
+    },
+    {
+      "id": 3,
+      "name": "Book 3",
+      "author": "The Author",
+      "price": 50.25,
+      "currency": "USD"
+    }
+  ]
+}
