@@ -17,18 +17,15 @@ const useStyles = makeStyles(theme => ({
 
 }))
 
-const Sidebar = ({opened}) => {
+const Sidebar = ({ opened }) => {
 
     const classes = useStyles()
 
     return (
-        
         <Drawer variant="persistent" className={classes.drawer} classes={{ paper: classes.drawerPaper }} open={opened}>
             <div className={classes.toolbar}></div>
             Sidebar contents goes here
         </Drawer>
-        
-        
     )
 }
 

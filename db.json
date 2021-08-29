@@ -20,6 +20,69 @@
       "author": "The Author",
       "price": 50.25,
       "currency": "USD"
+    },
+    {
+      "name": "Book Two",
+      "author": "Author Two",
+      "price": 20.5,
+      "currency": "EUR",
+      "id": 4
+    },
+    {
+      "name": "Tarzan ki waapsi",
+      "author": "Mohallay ka lafantar",
+      "price": "63",
+      "currency": "PKR",
+      "id": 5
+    },
+    {
+      "name": "Umro Ayyar ki chaachi",
+      "author": "Dukaan waal",
+      "price": "50",
+      "currency": "USD",
+      "id": 6
+    },
+    {
+      "name": "Nastoor ka aghwa",
+      "author": "Mulla Nasruddeen",
+      "price": "600",
+      "currency": "USD",
+      "id": 7
+    },
+    {
+      "name": "Aik nayi kitaab",
+      "author": "Maamu",
+      "price": "100",
+      "currency": "PKR",
+      "id": 8
+    },
+    {
+      "name": "Doosri Nayi Kitaab",
+      "author": "Chaachu",
+      "price": "200",
+      "currency": "PKR",
+      "id": 9
+    },
+    {
+      "name": "Sheeshay ka ghar",
+      "author": "sheesha saaz",
+      "price": "900",
+      "currency": "USD",
+      "id": 10
+    },
+    {
+      "name": "Alisha ki drawing",
+      "author": "Alisha",
+      "price": "45645482245",
+      "currency": "USD",
+      "id": 11
+    },
+    {
+      "name": "Proxy ka kamaal",
+      "author": "The Developer",
+      "price": "555",
+      "currency": "PKR",
+      "id": 12
     }
   ]
 }
