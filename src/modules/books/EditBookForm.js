@@ -5,14 +5,10 @@ import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import MenuItem from '@material-ui/core/MenuItem';
 
-const AddBookForm = ({ opened, onClose, onAdd }) => {
-
-    const defaultBook = {name: '', author: '', price: 0, currency: "PKR"};
-    const [book, setBook] = useState(defaultBook)
+const EditBookForm = ({ book, setBook, opened, onClose, onEdit }) => {
 
     function updateValue(e) {
         const newBook = {
@@ -22,18 +18,12 @@ const AddBookForm = ({ opened, onClose, onAdd }) => {
         setBook(newBook)
     }
 
-    function resetBook() {
-        setBook(defaultBook)
-    }
-
     function cancel() {
         onClose()
-        resetBook()
     }
 
-    function add() {
-        onAdd(book)
-        resetBook()
+    function edit() {
+        onEdit(book)
     }
 
     return (
@@ -41,7 +31,7 @@ const AddBookForm = ({ opened, onClose, onAdd }) => {
 
             <Dialog open={opened} onClose={onClose} aria-labelledby="form-dialog-title">
 
-                <DialogTitle id="form-dialog-title">Add Book</DialogTitle>
+                <DialogTitle id="form-dialog-title">Edit Book </DialogTitle>
 
                 <DialogContent>
                     <TextField
@@ -96,8 +86,8 @@ const AddBookForm = ({ opened, onClose, onAdd }) => {
                     <Button onClick={cancel} color="primary">
                         Cancel
                     </Button>
-                    <Button onClick={add} color="primary">
-                        Add Book
+                    <Button onClick={edit} color="primary">
+                        Edit Book
                     </Button>
                 </DialogActions>
             </Dialog>
@@ -106,4 +96,4 @@ const AddBookForm = ({ opened, onClose, onAdd }) => {
     )
 }
 
-export default AddBookForm
+export default EditBookForm
